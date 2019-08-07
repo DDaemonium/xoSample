@@ -1,5 +1,5 @@
 #pragma once
-class GameExecutor
+class GameExecutor final
 {
 public:
     GameExecutor() = default;

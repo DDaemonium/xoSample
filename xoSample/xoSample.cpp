@@ -6,8 +6,15 @@
 
 int main()
 {
-    GameExecutor().Run();
-    system("pause>>void");
+	try
+	{
+		GameExecutor().Run();
+		system("pause>>void");
+	}
+	catch (...)
+	{
+		std::cerr << "Smth went wrong";
+	}
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
